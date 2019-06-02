@@ -1,0 +1,288 @@
+$mainColor: rgb(17, 17, 17);
+$fontColor: white;
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $mainColor;
+}
+.main-container {
+    background-image: url("black-summer-background.jpg");
+    background-color: $mainColor;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    color: $fontColor;
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    position: relative;
+    
+}
+.menu-mobile-container {
+    display: none;
+}
+.mobile-banner {
+    display: none;
+}
+.header-container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    position: relative;
+    background-color: rgba(36, 36, 36, 0.3);
+    margin-top: 0;
+}
+.header-menu-icon-container {
+    display: none;
+}
+.logo-img {
+    height: 30px;
+    margin: 10px 45px 10px 50px;
+}
+.header-logo-container {
+    width: 25%;
+    height: 50px;
+    display: flex;
+}
+.header-list-container {
+    width: 70%;
+    height: 50px;
+    text-align: end;
+    padding: 0px 500px 0px 0px;
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.banner-inicio {
+    width: 100%;
+    height: 550px;
+}
+.banner-details {
+    width: 30%;
+    height: 500px;
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+.banner-title {
+    width: 100%;
+    height: 160px;
+    margin-top: 35px;
+    position: absolute;
+    h1 {
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 50px;
+        line-height: 40px;
+    }
+}
+.banner-buttons-container {
+    width: 60%;
+    height: 40px;
+    margin-top: 200px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+        div{
+            width: 120px;
+            height: 30px;
+            background-color: rgba(53, 52, 52, 0.6);
+            font-size: 16px;
+            font-family: Helvetica, sans-serif;
+            text-align: center;
+            line-height: 30px;
+        }
+}
+.banner-description {
+    width: 100%;
+    height: 60px;
+    margin-top: 230px;
+    margin-bottom: 70px;
+    position: absolute;
+}
+.list-container {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+}
+.list-title-container {
+    width: 100%;
+    height: 40px;
+    margin-left: 50px;
+    margin-top: 0;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    
+}
+.list-images-container {
+    width: 120%;
+    height: 140px;
+    margin-left: 50px;
+    display: flex;
+    img {
+        height: 100px;
+        width: 200px;
+        margin-left: 4px;
+    }
+}
+@media (max-width: 768px) {
+    .main-container {
+        background-image: none;
+    }
+    .menu-mobile-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 50%;
+        background-color: black;
+        position: absolute;
+        margin-top: 50px;
+        font-size: 16px;
+    }
+    .content-menu-container {
+        border-top: 1px solid white;
+        
+        ul {
+            list-style: none;
+            line-height: 35px;
+        }
+    }
+    .user-information {
+        height: 30%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        .user {
+            height: 35%;
+            display: flex;
+            flex-direction: row;
+            margin-left: 40px;
+            .user-img-container {
+                height: 100%;
+                width: 25%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .user-data {
+                margin-left: 10px;
+                text-align: left;
+                vertical-align: center;
+                .user-name {
+                    font-size: 20px;
+                    line-height: 10px;
+                    vertical-align: top;
+                }
+                .change-profile {
+                    font-size: 12px;
+                }
+            }
+        }
+        .user-menu-container {
+            ul {
+                list-style: none;
+                line-height: 30px;
+            }
+        }
+    
+    }
+
+
+    .banner-inicio {
+        display: none;
+    }
+    .mobile-banner {
+        display: flex;
+        width: 100%;
+        height: 50%;
+        margin-top: 50px;
+    }
+    .mobile-banner-img {
+        width: 100%;
+        height: 260px;
+        background-image: url("black-summer-background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .mobile-info-container {
+        width: 40%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        line-height: 5px;
+        .info-title {
+            width: 100%;
+            height: 30%;
+            line-height: 18px;
+            font-size: 18px;
+        }
+        .info-details {
+            width: 70%;
+            height: 30%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .info-button {
+            width: 90%;
+            height: 30%;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p {
+                height: 100%;
+                width: 40%;
+                text-align: center;
+                line-height: 30px;
+            }
+            .play-button {
+                background-color: red;
+            }
+            .episodes-button {
+                background-color: rgba(36, 36, 36, 0.7);
+                border: 1px solid white;
+            }
+        }
+    }
+
+    .header-container {
+        background-color: $mainColor;
+    }
+    .header-list-container {
+        display: none;
+    }
+    .header-menu-icon-container {
+        width: 10%;
+        height: 100%;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 20px;
+        font-size: 25px;
+        color: white;
+        display: flex;
+    }
+    .header-logo-container {
+        margin-left: 0;
+    }
+    .list-container {
+        margin-top: 20px;
+    }
+}
