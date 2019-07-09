@@ -5,18 +5,22 @@ body {
 }
 
 .main-container {
-  background-image: url("black-summer-background.jpg");
+  background-image: url("../images/black-summer.jpg");
   background-color: #111111;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 700px;
+  height: 800px;
   display: flex;
   flex-direction: column;
   color: white;
   font-size: 14px;
   font-family: Helvetica, sans-serif;
   position: relative;
+}
+
+.menu-mobile-container {
+  display: none;
 }
 
 .mobile-banner {
@@ -42,13 +46,11 @@ body {
 }
 
 .header-logo-container {
-  width: 25%;
   height: 50px;
   display: flex;
 }
 
 .header-list-container {
-  width: 70%;
   height: 50px;
   text-align: end;
   padding: 0px 500px 0px 0px;
@@ -58,10 +60,13 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.header-list-container li {
+  margin-left: 20px;
+}
 
 .banner-inicio {
   width: 100%;
-  height: 550px;
+  height: 500px;
 }
 
 .banner-details {
@@ -133,10 +138,11 @@ body {
 }
 
 .list-images-container {
-  width: 120%;
+  width: 100%;
   height: 140px;
   margin-left: 50px;
   display: flex;
+  overflow: hidden;
 }
 .list-images-container img {
   height: 100px;
@@ -147,6 +153,64 @@ body {
 @media (max-width: 768px) {
   .main-container {
     background-image: none;
+  }
+
+  .menu-mobile-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    background-color: black;
+    position: absolute;
+    margin-top: 50px;
+    font-size: 16px;
+  }
+
+  .content-menu-container {
+    border-top: 1px solid white;
+  }
+  .content-menu-container ul {
+    list-style: none;
+    line-height: 35px;
+  }
+
+  .user-information {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .user-information .user {
+    height: 35%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+  }
+  .user-information .user .user-img-container {
+    height: 100%;
+    width: 25%;
+  }
+  .user-information .user .user-img-container img {
+    width: 100%;
+    height: 100%;
+  }
+  .user-information .user .user-data {
+    margin-left: 10px;
+    text-align: left;
+    vertical-align: center;
+  }
+  .user-information .user .user-data .user-name {
+    font-size: 20px;
+    line-height: 10px;
+    vertical-align: top;
+  }
+  .user-information .user .user-data .change-profile {
+    font-size: 12px;
+  }
+  .user-information .user-menu-container ul {
+    list-style: none;
+    line-height: 30px;
   }
 
   .banner-inicio {
@@ -163,7 +227,7 @@ body {
   .mobile-banner-img {
     width: 100%;
     height: 260px;
-    background-image: url("black-summer-background.jpg");
+    background-image: url("../images/black-summer.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -242,4 +306,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style-menu-mobile.css.map */

@@ -34,13 +34,11 @@ body {
 }
 
 .header-logo-container {
-  width: 25%;
   height: 50px;
   display: flex;
 }
 
 .header-list-container {
-  width: 70%;
   height: 100%;
   text-align: end;
   padding: 0px 500px 0px 0px;
@@ -50,11 +48,14 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.header-list-container li {
+  margin-left: 20px;
+}
 
 .section-banner {
   width: 100%;
   height: 40%;
-  background-image: url("breakingbad-background.jpg");
+  background-image: url("../images/breakingbad-background.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -200,10 +201,11 @@ body {
 }
 
 .list-images-container {
-  width: 120%;
+  width: 100%;
   height: 140px;
   margin-left: 50px;
   display: flex;
+  overflow: hidden;
 }
 .list-images-container img {
   height: 100px;
@@ -221,7 +223,7 @@ body {
   .mobile-banner-img {
     width: 100%;
     height: 260px;
-    background-image: url("breakingbad-background.jpg");
+    background-image: url("../images/breakingbad-background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
